@@ -1,0 +1,19 @@
+@Citizen_ReporterAPI_HostAddress = https://localhost:44323
+
+GET {{Citizen_ReporterAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{Citizen_ReporterAPI_HostAddress}}/reportitems
+Content-Type: application/json
+
+{
+  "title": "Dog Steals Purse",
+  "MoreDeets": "X street, X estate"
+  "City": "Ikeja"
+  "State": "Lagos"
+  "Description": "Dog accidentally steals purse from old woman walking down the street in an attempt to flee its owner"
+}
+
+###
